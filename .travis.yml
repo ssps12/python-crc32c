@@ -12,9 +12,9 @@ jobs:
       arch: arm64
       
  install:
-    - sudo apt-get update
-    - sudo apt-get -y install dictionaries-common aspell aspell-en hunspell-en-us libenchant1c2a enchant     
+   - sudo apt-get update
+   - sudo apt-get -y install dictionaries-common aspell aspell-en hunspell-en-us libenchant1c2a enchant     
     
  script:
-    - ./scripts/manylinux/build.sh
-    - ./scripts/manylinux/check.sh
+   - ./scripts/manylinux/build.sh
+   - ./scripts/manylinux/check.sh
