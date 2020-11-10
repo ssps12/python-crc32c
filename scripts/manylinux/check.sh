@@ -20,7 +20,7 @@ echo "CHECKING ON LINUX"
 
 VERSION=$(awk "/version \= ([0-9.]+)/" setup.cfg)
 PACKAGE_VERSION=${VERSION:10}
-WHEEL_FILE="wheels/google_crc32c-${PACKAGE_VERSION}-cp36-cp36m-manylinux1_x86_64.whl"
+WHEEL_FILE="wheels/google_crc32c-${PACKAGE_VERSION}-cp36-cp36m-manylinux2014_aarch64.whl"
 PYTHON=python3.6
 
 # Using pyenv, set 3.6.1 as a local python version.
