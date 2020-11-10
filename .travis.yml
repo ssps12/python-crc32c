@@ -2,7 +2,7 @@ language: python
 
 os: linux
 
-jobs:
+matrix:
   include:
     - python: 3.6
       arch: arm64
