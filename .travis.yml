@@ -11,7 +11,7 @@ jobs:
     - python: 3.8
       arch: arm64
       
- before_install:
+ install:
     - sudo apt-get update
     - sudo apt-get -y install dictionaries-common aspell aspell-en hunspell-en-us libenchant1c2a enchant     
     
