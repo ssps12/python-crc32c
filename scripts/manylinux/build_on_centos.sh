@@ -29,6 +29,7 @@ ${MAIN_PYTHON_BIN}/python -m pip install \
 cd /var/code/python-crc32c/google_crc32c/
 mkdir build
 cd build/
+sudo apt-get -y install openssl
 ${MAIN_PYTHON_BIN}/cmake \
     -DCRC32C_BUILD_TESTS=no \
     -DCRC32C_BUILD_BENCHMARKS=no \
