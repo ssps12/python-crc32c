@@ -25,7 +25,7 @@ PYTHON=python3.6
 
 # Using pyenv, set 3.6.1 as a local python version.
 # pyenv versions
-pyenv local 3.6.1
+#pyenv local 3.6.1
 
 # Make sure we can create a virtual environment.
 ${PYTHON} -m pip install --upgrade setuptools pip wheel
