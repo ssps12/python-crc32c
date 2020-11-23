@@ -34,7 +34,7 @@ ${PYTHON} -m pip install --upgrade setuptools pip wheel
 ${PYTHON} -m venv venv
 
 # Install the wheel.
-venv/bin/pip install ${WHEEL_FILE}
+${PYTHON} -m pip install ${WHEEL_FILE}
 
 # Verify that the module is installed and peek at contents.
 venv/bin/python scripts/check_cffi_crc32c.py
