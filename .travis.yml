@@ -12,7 +12,7 @@ matrix:
       
 install:
   - sudo apt-get update
-  - sudo apt-get -y install openssl dictionaries-common aspell aspell-en hunspell-en-us libenchant1c2a enchant
+  #- sudo apt-get -y install openssl dictionaries-common aspell aspell-en hunspell-en-us libenchant1c2a enchant
   - sudo ldconfig     
   
 script:
