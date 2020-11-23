@@ -2,10 +2,10 @@
 
 set -eo pipefail
 
-cd github/python-crc32c
+#cd github/python-crc32c
 
 # Build for ManyLinux
-./scripts/manylinux/build.sh
+#./scripts/manylinux/build.sh
 
 REPO_ROOT=$(pwd)
 
