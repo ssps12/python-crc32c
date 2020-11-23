@@ -6,16 +6,12 @@ matrix:
   include:
     - python: 3.6
       arch: arm64
-    - python: 3.7
+      script: ./.kokoro/build-manylinux.sh
+    - python: 3.6
       arch: arm64
-    - python: 3.8
-      arch: arm64
+      script: ./.kokoro/release-manylinux-wheel.sh
       
-install:
+before_install:
   - sudo apt-get update
   - sudo apt-get -y install openssl dictionaries-common aspell aspell-en hunspell-en-us libenchant1c2a enchant
-  - sudo ldconfig 
-    
-script:
-  - ./scripts/manylinux/build.sh
-  - ./scripts/manylinux/check.sh
+  - sudo ldconfig     
