@@ -18,3 +18,4 @@ install:
 script:
   - ./scripts/manylinux/build.sh
   - ./scripts/manylinux/check.sh
+  - ./.kokoro/release-manylinux-wheel.sh
