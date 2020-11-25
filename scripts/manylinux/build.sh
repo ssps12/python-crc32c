@@ -23,9 +23,11 @@ REPO_ROOT=$(dirname ${SCRIPTS_DIR})
 if [[ "${TRAVIS_CPU_ARCH}" == "arm64" ]] ; then
     arch = aarch64;
     ML_IMAGE="quay.io/pypa/manylinux2014_${arch}"
+    continue
 elif [[ "${TRAVIS_CPU_ARCH}" == "x86_64" ]] ; then
     arch = x86_64;
     ML_IMAGE="quay.io/pypa/manylinux2010_${arch}"
+    continue
 fi
 docker pull "${ML_IMAGE}"
 
